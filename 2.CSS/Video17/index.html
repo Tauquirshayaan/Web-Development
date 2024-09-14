@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Class selectors */
+        .red {
+            background-color: blanchedalmond;
+        }
+
+        /* Id Selectors */
+        #green {
+            color: green;
+        }
+
+        /* Parent Child Selelctor */
+        div>p {
+            color: aquamarine;
+        }
+
+        /* Desendent Slelector - This will apply for every P tag under any div
+        div p{
+            background-color: azure;
+            color: brown;
+        } */
+
+        /* Universal Selelctors */
+        * {
+            padding: 5px;
+            margin: 2px;
+        }
+
+        /* Pseudo Selectors */
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        a:link{
+            color: brown;
+        }
+        a:active{
+            background-color: bisque;
+        }
+        /* p:first-child{
+            background-color: blueviolet;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first child</p>
+        <p>I am second child</p>
+    </main>
+
+    <div class="red">
+        <p id="green">Hey this is class selector example</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit, modi sed tempora ab aut architecto
+            omnis atque,</p>
+    </div>
+
+    <div>
+        <article>
+            <p>Child selector will not work under another tag</p>
+        </article>
+    </div>
+    <a href="https://azure.com">Azure</a>
+    <a href="https://twitter.com">twitter</a>
+    <a href="https://quora2.com">Quora2</a>
+</body>
+
+</html>
